@@ -23,7 +23,7 @@ unzip -o -q build/$TARGET.swc library.swf
 mv library.swf build/mac
 
 "$ADT" -package \
-	-target ane $TARGET build/extension.xml \
+	-target ane $TARGET.ane build/extension.xml \
 	-swc build/$TARGET.swc  \
 	-platform MacOS-x86 \
 	-C build/mac .
