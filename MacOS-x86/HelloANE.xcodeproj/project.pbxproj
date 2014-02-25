@@ -201,7 +201,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "cd ..\n/code/git/as3/HelloANE/build.command";
+			shellScript = "cd ..\n/Users/booster/Documents/Flash/CadetEngineProjects/as3-osx-HelloANE/build.command";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -232,7 +232,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				COPY_PHASE_STRIP = NO;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -256,7 +255,6 @@
 					"\"Adobe AIR\"",
 				);
 				PRODUCT_NAME = HelloANE;
-				SDKROOT = macosx10.7;
 				WRAPPER_EXTENSION = framework;
 			};
 			name = Debug;
@@ -265,7 +263,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -281,9 +278,7 @@
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(HOME)/Library/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/../runtimes/air/mac @executable_path/../Frameworks /Library/Frameworks";
-				LIBRARY_SEARCH_PATHS = (
-					"/Library/Frameworks/Adobe\\ AIR.framework/Versions/1.0",
-				);
+				LIBRARY_SEARCH_PATHS = "/Library/Frameworks/Adobe\\ AIR.framework/Versions/1.0";
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_CFLAGS = "-fvisibility=hidden";
 				OTHER_LDFLAGS = (
@@ -292,7 +287,6 @@
 					"\"Adobe AIR\"",
 				);
 				PRODUCT_NAME = HelloANE;
-				SDKROOT = macosx10.7;
 				WRAPPER_EXTENSION = framework;
 			};
 			name = Release;
@@ -312,7 +306,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PREBINDING = NO;
-				SDKROOT = macosx10.6;
+				SDKROOT = macosx;
 			};
 			name = Debug;
 		};
@@ -329,7 +323,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				PREBINDING = NO;
-				SDKROOT = macosx10.6;
+				SDKROOT = macosx;
 			};
 			name = Release;
 		};
