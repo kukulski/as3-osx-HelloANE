@@ -4,10 +4,12 @@
 trivial "hello world" air native extension for OSX.
 
 
+
 ##key bits (in the order to build them)
 * as3-library/MaxOS-x86 -- the flashbuilder project for the wrapper.swc
 * MacOS-x86/HelloANE.xcodeproj  -- the thing that builds HelloANE.framework. it cheats a little in that it manually includes the required FlashRuntimeExtensions.h.
 * * the XCODE project calls the "build.command" script to rebuild the ANE on "Build for Archiving"
+* * _both build.command and MacOS-x86/HelloANE.xcodeproj/project.pbxproj have user-dependent paths that need to be edited before the build will work_
 * make sure to select Build -> Build for -> Profiling (this creates a release build)
 * TestHelloANE -- trivial test app that traces the result of the call to the native extension
 * do a "Clean…" rebuild in Flash Builder 4.7 to pick up changes to your native code
